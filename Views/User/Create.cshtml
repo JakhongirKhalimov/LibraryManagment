@@ -1,0 +1,60 @@
+﻿@model LibraryManagementSystem.ViewModels.UserViewModels.CreateUserViewModel;
+@{
+    ViewBag.Title = "Create User";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create User</title>
+</head>
+<body>
+    <form class="auth-form" asp-controller="User" asp-action="Create" method="post">
+        <h1>Create User</h1>
+
+        <div class="form-group">
+            <label for="UserName">Username</label>
+            <input type="text" name="UserName" placeholder="Username" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" name="Password" placeholder="Password" required />
+        </div>
+
+        <div class="form-group">
+            <label for="ConfirmPassword">Confirm Password</label>
+            <input type="password" name="ConfirmPassword" placeholder="Confirm Password" required />
+        </div>
+
+        <div class="form-group">
+            <label for="RoleId">User Role</label>
+            <select class="form-control" name="RoleId" value="0">
+                <option value="0">Select Role</option>
+                @foreach (var role in Model.Roles)
+                {
+                    <option value="@role.Id">@role.Name</option>
+                }
+            </select>
+        </div>
+        
+        
+        
+        
+
+        <div class="auth-button">
+
+            <button class="btn btn-success" type="submit">Create</button>
+            <a class="btn btn-secondary" asp-controller="User" asp-action="UserList">Users</a>
+        </div>
+        @if (ViewData["ValidationMessage"] != null)
+        {
+            <br />
+            <div class="validation-message">@ViewData["ValidationMessage"]</div>
+        }
+
+    </form>
+</body>
+</html>

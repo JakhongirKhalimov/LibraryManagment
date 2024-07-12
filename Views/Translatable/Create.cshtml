@@ -1,0 +1,72 @@
+﻿@model LibraryManagementSystem.ViewModels.TranslatableViewModels.CreateTranslatableViewModel;
+@{
+    ViewBag.Title = "Create Translatable";
+}
+
+<form class="auth-form" asp-controller="Translatable" asp-action="Create" method="post">
+    <h1>Add Translatable</h1>
+    <div>
+        <label for="Entity">Entity:</label>
+        <select class="form-control" id="EntityList" name="Entity">
+            <option value="">Select Entity</option>
+            @foreach (var entity in Model.Entities)
+            {
+                <option value="@entity">@entity</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label for="Attribute">Attribute:</label>
+        <select class="form-control" id="AttributeList" name="Attribute">
+            <option value="">Select Attribute</option>
+            @foreach (var attr in Model.Attributes)
+            {
+                <option value="@attr">@attr</option>
+            }
+           
+        </select>
+    </div>
+    <div class="auth-button">
+        <button class="btn btn-success" type="submit">Create</button>
+        <a class="btn btn-secondary" asp-controller="Translatable" asp-action="TranslatableList">Translatables</a>
+    </div>
+    @if (ViewData["ValidationMessage"] != null)
+    {
+        <br />
+        <div class="validation-message">@ViewData["ValidationMessage"]</div>
+    }
+</form>
+
+@section Scripts{
+    <script type="text/javascript">
+        $(function () {
+            $('#AttributeList').each(function () {
+                if ($(this).find("option").length <= 1) {
+                    $(this).attr("disabled", "disabled");
+                }
+            });
+
+            $('#EntityList').change(function () {
+                var entity = $(this).val();
+                if (entity != "") {
+                    $.ajax({
+                        type: "POST",
+                        url: '/Translatable/GetAttributes',
+                        data: {Entity: entity},
+                        success: function(response){
+                            if (response != null) {
+                                $('#AttributeList').empty().append('<option selected="selected" value="0">Please select</option>');
+                                if (response.length > 0) {
+                                    $('#AttributeList').removeAttr("disabled");
+                                    $.each(response, function () {
+                                        $('#AttributeList').append($("<option></option>").val(this).html(this));
+                                    });
+                                }
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}

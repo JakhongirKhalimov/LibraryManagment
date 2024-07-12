@@ -1,0 +1,50 @@
+﻿@model LibraryManagementSystem.ViewModels.UserViewModels.UpdateUserViewModel;
+@{
+    ViewBag.Title = "Update User";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Update User</title>
+</head>
+<body>
+    <form class="auth-form" asp-controller="User" asp-action="Update" method="post">
+        <h1>Update User</h1>
+        <div class="form-group">
+            <label for="UserName">Username</label>
+            <input type="text" name="UserName" placeholder="Username" disabled value="@Model.UserName" />
+        </div>
+        <div class="form-group">
+            <label for="RoleId">User Role</label>
+            <select class="form-control" name="RoleId">
+                <option value="0">Select Role</option>
+                @foreach (var role in Model.Roles)
+                {
+                    @if (role.Id == Model.RoleId)
+                    {
+                        <option value="@role.Id" selected>@role.Name</option>
+                    }
+                    else
+                    {
+                        <option value="@role.Id">@role.Name</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="auth-button">
+
+            <button class="btn btn-primary" type="submit">Update</button>
+            <a class="btn btn-secondary" asp-controller="User" asp-action="UserList">Users</a>
+        </div>
+        @if (ViewData["ValidationMessage"] != null)
+        {
+            <br />
+            <div class="validation-message">@ViewData["ValidationMessage"]</div>
+        }
+
+    </form>
+</body>
+</html>

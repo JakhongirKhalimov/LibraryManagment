@@ -1,0 +1,125 @@
+﻿@model PaginatedList<LibraryManagementSystem.ViewModels.BookViewModels.BookViewModel>
+
+@{
+    ViewData["Title"] = "Book List";
+}
+
+<h1>Book List</h1>
+
+@{
+    var sortBy = ViewData["sortBy"] as int?;
+    var ascSelected = (sortBy.HasValue && sortBy == 1) ? "selected" : "";
+    var descSelected = (sortBy.HasValue && sortBy == 2) ? "selected" : "";
+}
+
+<div class="row">
+    <div class="col-sm-6 mb-2">
+        <a class="btn btn-success" asp-action="Create">Create New</a>
+    </div>
+    <div class="col-sm-6  mb-2">
+        <form class="filter-form" asp-controller="Book" asp-action="BookList" method="get">
+            <div class="input-group">
+                <input type="text" class="form-control" name="searchQuery" placeholder="Search" value="@ViewData["searchQuery"]">
+                <select class="custom-select" name="sortBy">
+                    <option value="0">SortBy</option>
+                    @if (sortBy.HasValue && sortBy == 1)
+                    {
+                        <option value="1" selected>ASC</option>
+                        <option value="2">DESC</option>
+                    }
+                    else if (sortBy.HasValue && sortBy == 2)
+                    {
+                        <option value="1">ASC</option>
+                        <option value="2" selected>DESC</option>
+                        
+                    }
+                    else
+                    {
+                        <option value="1">ASC</option>
+                        <option value="2">DESC</option>
+                    }
+                </select>
+                <button class="btn btn-dark" type="submit">Filter</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Cover
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                Author
+            </th>
+            <th>
+                Category
+            </th>
+            <th>
+                ISBN
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr class="align-content-center">
+                <td>
+                    <img src="@book.Image" class="img-fluid rounded" alt="@book.Id" style="max-height: 100px;" />
+                </td>
+                <td>
+                    @book.Title
+                </td>
+                <td>
+                    @book.Author
+                </td>
+                <td>
+                    @book.CategoryName
+                </td>
+                <td>
+                    @book.ISBN
+                </td>
+                <td>
+                    <a class="btn btn-success" asp-action="Details" asp-route-id="@book.Id">Details</a>
+                    <a class="btn btn-primary" asp-action="Update" asp-route-id="@book.Id">Edit</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@book.Id" onclick="return confirmDelete()">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="BookList"
+   asp-route-sortBy="@ViewData["sortBy"]"
+   asp-route-searchQuery="@ViewData["searchQuery"]"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   class="btn btn-dark @prevDisabled">
+    Previous
+</a>
+
+<a asp-action="BookList"
+   asp-route-sortBy="@ViewData["sortBy"]"
+   asp-route-searchQuery="@ViewData["searchQuery"]"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   class="btn btn-dark @nextDisabled">
+    Next
+</a>
+
+@if (ViewData["ValidationMessage"] != null)
+{
+    <br />
+    <div class="validation-message">@ViewData["ValidationMessage"]</div>
+}

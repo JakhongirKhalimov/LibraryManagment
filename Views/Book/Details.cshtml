@@ -1,0 +1,74 @@
+﻿@model LibraryManagementSystem.ViewModels.BookViewModels.BookViewModel
+@{
+    ViewBag.Title = "BookById";
+}
+
+<div class="container mt-4">
+    <div class="row mb-3">
+        <div class="col mt-2">
+            <a class="btn btn-secondary" asp-action="BookList">Books</a>
+            <a class="btn btn-primary" asp-action="Update" asp-route-id="@Model.Id">Edit</a>
+            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@Model.Id" onclick="return confirmDelete()">Delete</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">Book: @Model.Title</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>Cover:</strong>
+                </div>
+                <div class="col-md-9">
+                    <img src="@Model.Image" class="img-fluid rounded" alt="Book Image" style="max-height: 200px;" />
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>Title:</strong>
+                </div>
+                <div class="col-md-9">
+                    @Model.Title
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>Author:</strong>
+                </div>
+                <div class="col-md-9">
+                    @Model.Author
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>Category:</strong>
+                </div>
+                <div class="col-md-9">
+                    @Model.CategoryName
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>ISBN:</strong>
+                </div>
+                <div class="col-md-9">
+                    @Model.ISBN
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>Details:</strong>
+                </div>
+                <div class="col-md-9">
+                    @Model.Details
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

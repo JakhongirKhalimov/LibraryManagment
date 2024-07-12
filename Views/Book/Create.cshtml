@@ -1,0 +1,48 @@
+﻿@model LibraryManagementSystem.ViewModels.BookViewModels.CreateBookViewModel;
+@{
+    ViewBag.Title = "Create Book";
+}
+
+<form class="auth-form" asp-controller="Book" asp-action="Create" method="post" enctype="multipart/form-data">
+    <h1>Create Book</h1>
+    <div>
+        <label for="Title">Title</label>
+        <input type="text" id="Title" name="Title" placeholder="Title" required />
+    </div>
+    <div>
+        <label for="Author">Author</label>
+        <input type="text" id="Author" name="Author" placeholder="Author" required />
+    </div>
+    <div>
+        <label for="ISBN">ISBN</label>
+        <input type="text" id="ISBN" name="ISBN" placeholder="ISBN" required />
+    </div>
+    <div>
+        <label for="ImageFile">Book Cover</label>
+        <input type="file" id="ImageFile" name="ImageFile" accept="image/*" />
+        <br /><br />
+    </div>
+    <div>
+        <label for="Details">Details:</label>
+        <textarea id="Details" name="Details" placeholder="Details About the Book" required class="form-control"></textarea>
+        <br />
+    </div>
+    <div>
+        <label for="CategoryId">Category:</label>
+        <select class="form-control" id="CategoryId" name="CategoryId" value="0">
+            @foreach (var category in Model.BookCategories)
+            {
+                <option value="@category.Id">@category.Name</option>
+            }
+        </select>
+    </div>
+    <div class="auth-button">
+        <button class="btn btn-success" type="submit">Create</button>
+        <a class="btn btn-secondary" asp-controller="Book" asp-action="BookList">Books</a>
+    </div>
+    @if (ViewData["ValidationMessage"] != null)
+    {
+        <br />
+        <div class="validation-message">@ViewData["ValidationMessage"]</div>
+    }
+</form>

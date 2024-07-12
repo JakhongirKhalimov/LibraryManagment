@@ -1,0 +1,37 @@
+﻿@model LibraryManagementSystem.ViewModels.UserViewModels.UserViewModel
+@{
+    ViewBag.Title = "UserById";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UserById</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row mb-3">
+            <div class="col">
+                <a class="btn btn-secondary" asp-controller="User" asp-action="UserList">Users</a>
+                <a class="btn btn-primary" asp-controller="User" asp-action="Update" asp-route-id="@Model.Id">Edit</a>
+                <a class="btn btn-danger" asp-controller="User" asp-action="Delete" asp-route-id="@Model.Id" onclick="return confirmDelete()">Delete</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">User Information</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>User ID:</strong> @Model.Id</li>
+                    <li class="list-group-item"><strong>Username:</strong> @Model.UserName</li>
+                    <li class="list-group-item"><strong>Role ID:</strong> @Model.RoleId</li>
+                    <li class="list-group-item"><strong>User Role:</strong> @Model.RoleName</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

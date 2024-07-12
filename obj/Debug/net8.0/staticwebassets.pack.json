@@ -1,0 +1,413 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\library-management-system\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LibraryManagementSystem.bundle.scp.css",
+      "PackagePath": "staticwebassets\\LibraryManagementSystem.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\0e383fe2-ea82-4f7c-84d0-edee636b1f8c_Cursed_Child_new_poster.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\0e383fe2-ea82-4f7c-84d0-edee636b1f8c_Cursed_Child_new_poster.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\12fbad29-79e4-4e10-aba8-21d24d9d0941_Reasons why I hate museums.pdf",
+      "PackagePath": "staticwebassets\\images\\book-covers\\12fbad29-79e4-4e10-aba8-21d24d9d0941_Reasons why I hate museums.pdf"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\1893e58a-8689-4cc8-9ad8-5ac481ddbbd4_notification-active.png",
+      "PackagePath": "staticwebassets\\images\\book-covers\\1893e58a-8689-4cc8-9ad8-5ac481ddbbd4_notification-active.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\1f247112-dfed-4e57-bdda-afc10a68a98b_Amazon-Kindle-Paperwhite-10th-Gen-2.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\1f247112-dfed-4e57-bdda-afc10a68a98b_Amazon-Kindle-Paperwhite-10th-Gen-2.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\3044d82c-221a-44f7-b217-0f66f5f72acd_Harry_Potter_and_the_Half-Blood_Prince_cover.png",
+      "PackagePath": "staticwebassets\\images\\book-covers\\3044d82c-221a-44f7-b217-0f66f5f72acd_Harry_Potter_and_the_Half-Blood_Prince_cover.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\308cef55-6665-4e84-9c4e-65049eb72a7f_xk5-1024-free-ebook-cover-templates-download-online.webp",
+      "PackagePath": "staticwebassets\\images\\book-covers\\308cef55-6665-4e84-9c4e-65049eb72a7f_xk5-1024-free-ebook-cover-templates-download-online.webp"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\31dac4a4-fc27-4769-b851-cb39bbd5062f_video_2024-05-23_14-47-28.mp4",
+      "PackagePath": "staticwebassets\\images\\book-covers\\31dac4a4-fc27-4769-b851-cb39bbd5062f_video_2024-05-23_14-47-28.mp4"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\39a61186-2c59-49a7-8bc3-39c52bea02b5_library-management-system-class-diagram.drawio.png",
+      "PackagePath": "staticwebassets\\images\\book-covers\\39a61186-2c59-49a7-8bc3-39c52bea02b5_library-management-system-class-diagram.drawio.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\3b39698a-4686-4ed9-acad-8fa939510a31_order-of-the-phoenix-adult-edition.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\3b39698a-4686-4ed9-acad-8fa939510a31_order-of-the-phoenix-adult-edition.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\3f25aae4-1508-4c98-b5c7-241245d35670_images.jfif",
+      "PackagePath": "staticwebassets\\images\\book-covers\\3f25aae4-1508-4c98-b5c7-241245d35670_images.jfif"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\3fbe6051-a0ba-4202-9d5a-9477eddb56fb_xk5-1024-free-ebook-cover-templates-download-online.webp",
+      "PackagePath": "staticwebassets\\images\\book-covers\\3fbe6051-a0ba-4202-9d5a-9477eddb56fb_xk5-1024-free-ebook-cover-templates-download-online.webp"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\42471c56-47e6-4081-81a7-48ca183eb6c8_notification.png",
+      "PackagePath": "staticwebassets\\images\\book-covers\\42471c56-47e6-4081-81a7-48ca183eb6c8_notification.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\429fab06-b9a5-418d-816e-0d5f33ad1b5d_Harry_Potter_and_the_Philosopher's_Stone_Book_Cover.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\429fab06-b9a5-418d-816e-0d5f33ad1b5d_Harry_Potter_and_the_Philosopher's_Stone_Book_Cover.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\4311ed3b-22e5-4860-95b7-223858f1731a_xk5-1024-free-ebook-cover-templates-download-online.webp",
+      "PackagePath": "staticwebassets\\images\\book-covers\\4311ed3b-22e5-4860-95b7-223858f1731a_xk5-1024-free-ebook-cover-templates-download-online.webp"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\491727d0-2756-4d00-9198-45378d689f5b_Twilightbook.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\491727d0-2756-4d00-9198-45378d689f5b_Twilightbook.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\4c622fd8-13ee-4543-ba7f-48794dd2c162_xk5-1024-free-ebook-cover-templates-download-online.webp",
+      "PackagePath": "staticwebassets\\images\\book-covers\\4c622fd8-13ee-4543-ba7f-48794dd2c162_xk5-1024-free-ebook-cover-templates-download-online.webp"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\57cc45ce-a069-4732-aed6-bc34441f5923_Twilightbook.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\57cc45ce-a069-4732-aed6-bc34441f5923_Twilightbook.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\5b95b1fa-7c76-44c3-ac5f-464e72d319b6_fd96bbfe-ba00-4476-80a9-3e01a3e4f128.png",
+      "PackagePath": "staticwebassets\\images\\book-covers\\5b95b1fa-7c76-44c3-ac5f-464e72d319b6_fd96bbfe-ba00-4476-80a9-3e01a3e4f128.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\64c88a77-dffc-4e18-9c85-bf47639f8546_order-of-the-phoenix-adult-edition.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\64c88a77-dffc-4e18-9c85-bf47639f8546_order-of-the-phoenix-adult-edition.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\65a00ebd-a5f4-46ae-8de0-0d871257b215_Amazon-Logo.png",
+      "PackagePath": "staticwebassets\\images\\book-covers\\65a00ebd-a5f4-46ae-8de0-0d871257b215_Amazon-Logo.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\6e0f621b-f59f-4da2-8aec-1149cbdfecf3_Twilightbook.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\6e0f621b-f59f-4da2-8aec-1149cbdfecf3_Twilightbook.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\794aea54-b236-405a-85f6-e1d2fcb81147_xk5-1024-free-ebook-cover-templates-download-online.webp",
+      "PackagePath": "staticwebassets\\images\\book-covers\\794aea54-b236-405a-85f6-e1d2fcb81147_xk5-1024-free-ebook-cover-templates-download-online.webp"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\8f10bbe3-7a1e-4e89-b4a4-d25d7ca049be_black.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\8f10bbe3-7a1e-4e89-b4a4-d25d7ca049be_black.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\bc70d852-453a-4332-bf94-42e77be70a03_fd96bbfe-ba00-4476-80a9-3e01a3e4f128.png",
+      "PackagePath": "staticwebassets\\images\\book-covers\\bc70d852-453a-4332-bf94-42e77be70a03_fd96bbfe-ba00-4476-80a9-3e01a3e4f128.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\bca635e0-3822-4d0b-b3a2-839988a3be71_images.jfif",
+      "PackagePath": "staticwebassets\\images\\book-covers\\bca635e0-3822-4d0b-b3a2-839988a3be71_images.jfif"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\bf50033f-c3de-4e0b-bb17-9d7c5292bbfalibrary-management-system-class-diagram.drawio.png",
+      "PackagePath": "staticwebassets\\images\\book-covers\\bf50033f-c3de-4e0b-bb17-9d7c5292bbfalibrary-management-system-class-diagram.drawio.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\c776462d-8ef8-48f0-aca7-2c3f68103ed7_xk5-1024-free-ebook-cover-templates-download-online.webp",
+      "PackagePath": "staticwebassets\\images\\book-covers\\c776462d-8ef8-48f0-aca7-2c3f68103ed7_xk5-1024-free-ebook-cover-templates-download-online.webp"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\c9a407bc-3442-43fb-820b-85b00fdabb8c_Harry_Potter_and_the_Half-Blood_Prince_cover.png",
+      "PackagePath": "staticwebassets\\images\\book-covers\\c9a407bc-3442-43fb-820b-85b00fdabb8c_Harry_Potter_and_the_Half-Blood_Prince_cover.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\d62c609d-5fa3-4717-84a7-aad2746686a1_Cursed_Child_new_poster.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\d62c609d-5fa3-4717-84a7-aad2746686a1_Cursed_Child_new_poster.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\deb46756-9708-46a2-9dda-3dcde8f806e1_Amazon-Kindle-Paperwhite-10th-Gen-2.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\deb46756-9708-46a2-9dda-3dcde8f806e1_Amazon-Kindle-Paperwhite-10th-Gen-2.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\e9cb51fc-2242-417a-94a6-1e43a40ec655_icons8-love-50 (1).png",
+      "PackagePath": "staticwebassets\\images\\book-covers\\e9cb51fc-2242-417a-94a6-1e43a40ec655_icons8-love-50 (1).png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\edd1311f-83bd-413f-9b46-3f0de605072e_order-of-the-phoenix-adult-edition.jpg",
+      "PackagePath": "staticwebassets\\images\\book-covers\\edd1311f-83bd-413f-9b46-3f0de605072e_order-of-the-phoenix-adult-edition.jpg"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\book-covers\\f5d81cd8-962d-46f6-8f9a-7db37cb15a74_images.jfif",
+      "PackagePath": "staticwebassets\\images\\book-covers\\f5d81cd8-962d-46f6-8f9a-7db37cb15a74_images.jfif"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\ui-icons\\liked.png",
+      "PackagePath": "staticwebassets\\images\\ui-icons\\liked.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\ui-icons\\notification-active.png",
+      "PackagePath": "staticwebassets\\images\\ui-icons\\notification-active.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\ui-icons\\notification.png",
+      "PackagePath": "staticwebassets\\images\\ui-icons\\notification.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\images\\ui-icons\\unliked.png",
+      "PackagePath": "staticwebassets\\images\\ui-icons\\unliked.png"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\library-management-system\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LibraryManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LibraryManagementSystem.props",
+      "PackagePath": "build\\LibraryManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LibraryManagementSystem.props",
+      "PackagePath": "buildMultiTargeting\\LibraryManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LibraryManagementSystem.props",
+      "PackagePath": "buildTransitive\\LibraryManagementSystem.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

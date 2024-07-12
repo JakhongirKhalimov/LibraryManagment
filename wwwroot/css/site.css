@@ -1,0 +1,119 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.auth-form {
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="password"],
+.auth-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.auth-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.auth-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.auth-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.auth-form .validation-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.auth-form .auth-button{
+    display: flex;
+    justify-content:space-between;
+    align-content:center;
+    padding: 20px 0px 0px 0px;
+}
+
+.notification {
+    max-width: 350px;
+    height:80vh;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    position: absolute !important;
+    top: 57px;
+    right: 10px;
+    z-index: 10;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+}
+
+.unread-notification{
+    background-color:antiquewhite;
+}
+
+#toggleNotification {
+    cursor: pointer;
+}
+
+#likeImage{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none!important;
+}
+
+.notification-item{
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}

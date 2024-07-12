@@ -1,0 +1,115 @@
+﻿@model LibraryManagementSystem.ViewModels.BookViewModels.BookViewModel
+@{
+    ViewBag.Title = "BookById";
+}
+
+<div class="container mt-4">
+    <div class="row mb-3">
+        <div class="col mt-1">
+            <a class="btn btn-secondary" asp-action="Index">Home</a>
+        </div>
+        <div class="col d-flex justify-content-end">
+            <a id="favourite-button" value="@Model.Id">
+                @if (ViewData["Liked"] != null && ViewData["Liked"]?.ToString() == "liked")
+                {
+                    <img id="likeImage" src="/images/ui-icons/liked.png" />
+                }
+                else
+                {
+                    <img id="likeImage" src="/images/ui-icons/unliked.png" />
+                }
+            </a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">Book: @Model.Title</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>Cover:</strong>
+                </div>
+                <div class="col-md-9">
+                    <img src="@Model.Image" class="img-fluid rounded" alt="Book Image" style="max-height: 200px;" />
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>Title:</strong>
+                </div>
+                <div class="col-md-9">
+                    @Model.Title
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>Author:</strong>
+                </div>
+                <div class="col-md-9">
+                    @Model.Author
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>Category:</strong>
+                </div>
+                <div class="col-md-9">
+                    @Model.CategoryName
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>ISBN:</strong>
+                </div>
+                <div class="col-md-9">
+                    @Model.ISBN
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>Details:</strong>
+                </div>
+                <div class="col-md-9">
+                    @Model.Details
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('#favourite-button').click(function () {
+                var bookId = $('#favourite-button').attr('value');
+                if (bookId != "") {
+                    $.ajax({
+                        type: "POST",
+                        url: '/FavouriteBook/ToggleFavourite',
+                        data: { id: bookId },
+                        success: function (response) {
+                            console.log(response);
+                            if (response != null) {
+                                if (response.isValid == true) {
+                                    
+                                    var likeImage = $('#likeImage')[0];
+                                    if (likeImage.src.includes('unliked')) {
+                                        likeImage.src = '/images/ui-icons/liked.png';
+                                    } else {
+                                        likeImage.src = '/images/ui-icons/unliked.png';
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}

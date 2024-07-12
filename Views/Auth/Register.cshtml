@@ -1,0 +1,32 @@
+﻿@model LibraryManagementSystem.ViewModels.AuthViewModels.RegisterViewModel;
+@{
+    ViewBag.Title = "Register";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <form class="auth-form" asp-controller="Auth" asp-action="Register" method="post">
+        <h1>Register</h1>
+        <input type="text" name="Username" placeholder="Username" required />
+        <input type="password" name="Password" placeholder="Password" required />
+        <input type="password" name="ConfirmPassword" placeholder="Confirm Password" required />
+        <div class="auth-button">
+            
+            <button class="btn btn-secondary" type="submit">Register</button>
+            <a class="btn link-primary" asp-controller="auth" asp-action="login">Login</a>
+        </div>
+        @if (ViewData["ValidationMessage"] != null)
+        {
+            <br />
+            <div class="validation-message">@ViewData["ValidationMessage"]</div>
+        }
+
+    </form>
+</body>
+</html>

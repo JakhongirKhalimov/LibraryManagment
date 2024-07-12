@@ -1,0 +1,116 @@
+﻿@model PaginatedList<LibraryManagementSystem.ViewModels.TranslatableViewModels.TranslatableViewModel>
+
+@{
+    ViewData["Title"] = "TranslatableList";
+}
+
+<h1>Translatable List</h1>
+
+@{
+    var sortBy = ViewData["sortBy"] as int?;
+    var ascSelected = (sortBy.HasValue && sortBy == 1) ? "selected" : "";
+    var descSelected = (sortBy.HasValue && sortBy == 2) ? "selected" : "";
+}
+
+<div class="row">
+    <div class="col-sm-6 mb-2">
+        <a class="btn btn-success" asp-action="Create">Create New</a>
+    </div>
+    <div class="col-sm-6 mb-2">
+        <form class="filter-form" asp-controller="Translatable" asp-action="TranslatableList" method="get">
+            <div class="input-group">
+                <input type="text" class="form-control" name="searchQuery" placeholder="Search" value="@ViewData["searchQuery"]">
+                <select class="custom-select" name="sortBy">
+                    <option value="0">SortBy</option>
+                    @if (sortBy.HasValue && sortBy == 1)
+                    {
+                        <option value="1" selected>Asc</option>
+                        <option value="2">DESC</option>
+                    }
+                    @* @if(sortBy.HasValue && sortBy == 2)
+                    {
+                        <option value="3" selected>dsc</option>
+                        <option value="4" selected> aps</option>
+                    } *@
+                    else if (sortBy.HasValue && sortBy == 2)
+                    {
+                        <option value="1">ASC</option>
+                        <option value="2" selected>DESC</option>
+                    }
+                    else
+                    {
+                        <option value="1">ASC</option>
+                        <option value="2">DESC</option>
+                    }
+                </select>
+                <button class="btn btn-dark" type="submit">Filter</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Entity
+            </th>
+            <th>
+                Attribute
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var translatable in Model)
+        {
+            <tr>
+                <td>
+                    @translatable.Id
+                </td>
+                <td>
+                    @translatable.Entity
+                </td>
+                <td>
+                    @translatable.Attribute
+                </td>
+                <td>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@translatable.Id" onclick="return confirmDelete()">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="TranslatableList"
+   asp-route-sortBy="@ViewData["sortBy"]"
+   asp-route-searchQuery="@ViewData["searchQuery"]"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   class="btn btn-dark @prevDisabled">
+    Previous
+</a>
+
+<a asp-action="TranslatableList"
+   asp-route-sortBy="@ViewData["sortBy"]"
+   asp-route-searchQuery="@ViewData["searchQuery"]"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   class="btn btn-dark @nextDisabled">
+    Next
+</a>
+
+@if (ViewData["ValidationMessage"] != null)
+{
+    <br />
+    <div class="validation-message">@ViewData["ValidationMessage"]</div>
+}

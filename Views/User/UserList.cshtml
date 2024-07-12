@@ -1,0 +1,117 @@
+﻿@model PaginatedList<LibraryManagementSystem.ViewModels.UserViewModels.UserViewModel>
+
+@{
+    ViewData["Title"] = "User List";
+}
+
+<h1>User List</h1>
+
+@{
+    var sortBy = ViewData["sortBy"] as int?;
+    var ascSelected = (sortBy.HasValue && sortBy == 1) ? "selected" : "";
+    var descSelected = (sortBy.HasValue && sortBy == 2) ? "selected" : "";
+}
+
+<div class="row">
+    <div class="col-sm-6 mb-2">
+        <a class="btn btn-success" asp-action="Create">Create New</a>
+    </div>
+    <div class="col-sm-6  mb-2">
+        <form class="filter-form" asp-controller="User" asp-action="UserList" method="get">
+            <div class="input-group">
+                <input type="text" class="form-control" name="searchQuery" placeholder="Search" value="@ViewData["searchQuery"]">
+                <select class="custom-select" name="sortBy">
+                    <option value="0">SortBy</option>
+                    @if (sortBy.HasValue && sortBy == 1)
+                    {
+                        <option value="1" selected>ASC</option>
+                        <option value="2">DESC</option>
+                    }
+                    else if (sortBy.HasValue && sortBy == 2)
+                    {
+                        <option value="1">ASC</option>
+                        <option value="2" selected>DESC</option>
+                    }
+                    else
+                    {
+                        <option value="1">ASC</option>
+                        <option value="2">DESC</option>
+                    }
+                </select>
+                <button class="btn btn-dark" type="submit">Filter</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Username
+            </th>
+            <th>
+                Role
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var user in Model)
+        {
+        <tr>
+            <td>
+                @user.Id
+            </td>
+            <td>
+                @user.UserName
+            </td>
+            <td>
+                @user.RoleName
+            </td>
+            <td>
+                <a class="btn btn-success" asp-action="Details" asp-route-id="@user.Id">Details</a>
+                <a class="btn btn-primary" asp-action="Update" asp-route-id="@user.Id">Edit</a>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@user.Id" onclick="return confirmDelete()">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a  asp-action="UserList"
+    asp-route-sortBy="@ViewData["sortBy"]"
+   asp-route-searchQuery="@ViewData["searchQuery"]"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   class="btn btn-dark @prevDisabled">
+    Previous
+</a>
+
+<a asp-action="UserList"
+   asp-route-sortBy="@ViewData["sortBy"]"
+   asp-route-searchQuery="@ViewData["searchQuery"]"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   class="btn btn-dark @nextDisabled">
+    Next
+</a>
+
+@if (ViewData["ValidationMessage"] != null)
+{
+    <br />
+    <div class="validation-message">@ViewData["ValidationMessage"]</div>
+}

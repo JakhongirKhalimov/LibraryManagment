@@ -1,0 +1,39 @@
+﻿<div class="notification hidden">
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            console.log("I'm in!");
+            $.ajax({
+                type: "GET",
+                cache: false,
+                url: '/Notification/GetNotifications',
+                data: null,
+                success: function (response) {
+                    console.log(response);
+                    if (response != null) {
+                        if (response.isValid == true) {
+                            var notificationsHTML = '';
+                            $.each(response.data, function (index, notification) {
+                                notificationsHTML += '<div class="row px-4 py-3 m-0';
+                                if (notification.is === false) {
+                                    notificationsHTML += ' unread-notification';
+                                }
+                                notificationsHTML += '">';
+                                notificationsHTML += '<div class="col">' + notification.title + '</div>';
+                                notificationsHTML += '<div class="col d-flex justify-content-end">Mark Read</div>';
+                                notificationsHTML += '</div>';
+                            });
+
+                            $('.notification').html(notificationsHTML);
+                        }
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching notifications:', error);
+                }
+            });
+        });
+    </script>
+}
